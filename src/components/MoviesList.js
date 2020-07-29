@@ -1,7 +1,13 @@
 import React from 'react'
 
 export default function MoviesList({loading, moviesArray}) {
-    console.log(moviesArray)
+    console.log('MOVIES POSTER', moviesArray)
+
+    const arr = moviesArray
+    const arrFIlter = arr.filter( e => e.Poster === 'N/A');
+    
+    console.log('N A', arrFIlter)
+
     return (
         <div>
 
