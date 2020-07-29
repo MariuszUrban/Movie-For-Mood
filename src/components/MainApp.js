@@ -6,19 +6,12 @@ import Movies from '../containers/MoviesListCont'
 
 export default class App extends React.Component {
 
-  componentDidMount(){
-    fetch("http://www.omdbapi.com/?apikey=a010aa1f&t={'guardian'}")
-    .then(res=>res.json())
-    .then(data=>{
-      console.log('nasze filmy', data)
-    })
-  }
-
+ 
   render() {
     return (
       <Provider store={store}>
       <div>
-        <h1>URBANATOR  </h1>
+        <h1>MOVIE BY MOOD </h1>
         <SearchForm />
         <Movies />
       </div>

@@ -10,7 +10,7 @@ export default function MoviesList({loading, moviesArray}) {
                 <ul>
             {moviesArray.map(el=>{
                 return <li>
-                    <img src={el.Poster} />
+                    <img src={el.Poster} alt=''/>
                     <p>{el.Title}</p>
                 </li>
             })}

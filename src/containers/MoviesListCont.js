@@ -2,7 +2,7 @@ import {connect} from 'react-redux';
 import MoviesList from '../components/MoviesList';
 
 const mapState = (state) => {
-    console.log(state.movies, '?')
+    console.log('movies list', state)
     return {
         moviesArray: state.movies,
         loading: state.loading
