@@ -4,17 +4,24 @@ export default function MoviesList({loading, moviesArray}) {
     console.log('MOVIES POSTER', moviesArray)
 
     const arr = moviesArray
-    const arrFIlter = arr.filter( e => e.Poster === 'N/A');
-    
-    console.log('N A', arrFIlter)
 
+    function filterByPoster(movie){
+        if(movie.Poster === 'N/A'){
+            return true;
+        }
+    }
+
+    let arrByPoster = arr.filter(filterByPoster)
+
+   let diff = arr.filter( x => arrByPoster.indexOf(x) === -1);
+    
     return (
         <div>
 
             {loading && <h1>Pobieramy filmy</h1>}
-            {moviesArray.length && (
+            {diff.length && (
                 <ul>
-            {moviesArray.map(el=>{
+            {diff.map(el=>{
                 return <li>
                     <img src={el.Poster} alt=''/>
                     <p>{el.Title}</p>
