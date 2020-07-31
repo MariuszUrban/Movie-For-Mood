@@ -8,7 +8,7 @@ export default class About extends Component {
       <div className='about'>
 
         <h1> MOOVIE FOR MOOD </h1>
-          <span>
+          <span className='aboutSpan'>
             <p>movie search app which purpose is to find movie suggestions that are
             based on user's emotions or feelings. It gives a new way of finding
             a suitable movie proposition, matching to user's moods or atmoshpere
@@ -17,11 +17,12 @@ export default class About extends Component {
             definiately worth to watch, spreading at the same time knowlege of
             cinema history.</p>
           </span>
-          <span>
+          <span className='aboutSpan'>
           <p> After creating an account, you can create your profile or start to
             browse, adding propostions to a watchlist. Or you can just go for
             quick search. But first, express yourself!</p>
           </span>
+          <button type='submit' className='btn'><a href="#"> Back to main</a></button>
       </div>
     );
   }

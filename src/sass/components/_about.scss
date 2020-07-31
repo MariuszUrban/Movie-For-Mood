@@ -1,3 +1,5 @@
+@import '../utils/style.scss';
+
 .about{
     display: flex;
     flex-direction: column;
@@ -5,9 +7,33 @@
     align-items: center;
     text-align: justify;
     width: 75vw;
-    height: 50vh;
-    padding: 10px;
-    
-    
+    height: 90vh;
+    padding: 10px;  
+}
+
+.aboutSpan {
+    padding: 15px; 
+}
+
+.btn { 
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid $primaryColor;
+    padding: 14px 40px;
+    color: $fontColor;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+    a{
+        text-decoration: none;
+        color: $fontColor;
+    }
+}
+
+.btn:hover {
+    color: $hoverColor;
+    background-color:$primaryColor;
+    text-decoration: none;
 }
 

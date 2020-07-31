@@ -1,5 +1,5 @@
 import React from "react";
-
+import SignIn from '../components/SignIn';
 import About from '../components/About';
 import Home from '../components/Home'
 import { Provider } from "react-redux";
@@ -10,6 +10,7 @@ import "../sass/utils/style.scss";
 import '../sass/components/_mainApp.scss';
 
 const active = {color:' #083c4d', fontWeight:'bold' }
+
 
 export default class App extends React.Component {
   render() {
@@ -26,7 +27,7 @@ export default class App extends React.Component {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/signIn"
+                  <Link to="/signin"
                   activeStyle={active}>
                   SIGN IN</Link>
                 </li>
@@ -40,6 +41,7 @@ export default class App extends React.Component {
             <Switch>
               <Route exact path="/" component={Home} />
               <Route path ='/about' component={About} />
+              <Route path ='/signin' component={SignIn} />
             </Switch>
           </HashRouter>
         </Provider>
