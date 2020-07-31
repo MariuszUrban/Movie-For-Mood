@@ -1,34 +1,32 @@
-import React from 'react'
+import React from "react";
 
-export default function MoviesList({loading, moviesArray}) {
-    console.log('MOVIES POSTER', moviesArray)
+export default function MoviesList({ loading, moviesArray }) {
+  const arr = moviesArray;
 
-    const arr = moviesArray
-
-    function filterByPoster(movie){
-        if(movie.Poster === 'N/A'){
-            return true;
-        }
+  function filterByPoster(movie) {
+    if (movie.Poster === "N/A") {
+      return true;
     }
+  }
 
-    let arrByPoster = arr.filter(filterByPoster)
+  let arrByPoster = arr.filter(filterByPoster);
+  let diff = arr.filter((x) => arrByPoster.indexOf(x) === -1);
 
-   let diff = arr.filter( x => arrByPoster.indexOf(x) === -1);
-    
-    return (
-        <div>
-
-            {loading && <h1>Pobieramy filmy</h1>}
-            {diff.length && (
-                <ul>
-            {diff.map(el=>{
-                return <li>
-                    <img src={el.Poster} alt=''/>
-                    <p>{el.Title}</p>
-                </li>
-            })}
+  return (
+    <div>
+      {loading && <h1>Pobieramy filmy</h1>}
+      {diff.length && (
+        <ul>
+          {diff.map((el) => {
+            return (
+              <li>
+                <img src={el.Poster} alt="" />
+                <p>{el.Title}</p>
+              </li>
+            );
+          })}
         </ul>
-            )}
-        </div>
-    )
+      )}
+    </div>
+  );
 }

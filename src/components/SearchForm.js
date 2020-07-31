@@ -26,13 +26,13 @@ export default class SearchForm extends Component {
                                     'Panicky', 'Passionate', 'Patient', 'Perturbed', 'Petrified', 'Petulant', 'Placid', 'Pleased', 'Powerful', 'Prejudicial', 'Prideful',
                                     'Quarrelsome', 'Queasy', 'Quivering',
                                     'Rancorous', 'Rational', 'Reasonable', 'Reckless', 'Reflective', 'Remorseful', 'Repugnant', 'Resilient', 'Resolute', 'Resourceful', 'Respectful', 'Responsible', 'Responsive', 'Restorative', 'Reverent', 'Rude', 'Ruthless',
-                                    'Sad', 'Safe', 'Scared', 'Scornful', 'Seething', 'Selfish', 'Sensible', 'Sensitive', 'Serene', 'Shaky', 'Shivering', 'Shocked', 'Sickly', 'Simple', 'Sober', 'Solemn', 'Somber', 'Sour', 'Speechless', 'Spooked', 'Stern', 'Successful', 'Sullen', 'Superior', 'Supportive', 'Surly', 'Suspicious', 'Sweet', 'Sympathetic',
+                                    'Sad', 'Safe', 'Sexy', 'Scared', 'Scornful', 'Seething', 'Selfish', 'Sensible', 'Sensitive', 'Serene', 'Shaky', 'Shivering', 'Shocked', 'Sickly', 'Simple', 'Sober', 'Solemn', 'Somber', 'Sour', 'Speechless', 'Spooked', 'Stern', 'Successful', 'Sullen', 'Superior', 'Supportive', 'Surly', 'Suspicious', 'Sweet', 'Sympathetic',
                                     'Tactful', 'Tenacious', 'Tense', 'Terrific', 'Testy', 'Thoughtful', 'Thoughtless', 'Timorous', 'Tolerant', 'Tranquil', 'Treacherous', 'Trembling', 'Truthful',
                                     'Ultimate', 'Uncivil', 'Uncouth', 'Uneasy', 'Unethical', 'Unfair', 'Unique', 'Unmannerly', 'Unnerved', 'Unrefined', 'Unruffled', 'Unsavory', 'Unworthy', 'Uplifting', 'Upset', 'Uptight',
                                     'Versatile', 'Vicious', 'Vigilant', 'Vigorous', 'Vile', 'Villainous', 'Virtuous', 'Vivacious', 'Volatile', 'Vulnerable',
                                     'Warm', 'Wary', 'Waspish', 'Weak', 'Welcoming', 'Wicked', 'Wild', 'Wise', 'Wistful', 'Witty', 'Woeful', 'Wonderful', 'Worrying', 'Worthy',
                                     'Youthful',
-                                    'Zany', 'Zealous', ],
+                                    'Zany', 'Zealous', 'Zen'],
         }
     }
 
@@ -64,6 +64,7 @@ export default class SearchForm extends Component {
     
     render() {
         return (
+            
             <form onSubmit={this.getMovie}>
                 <input 
                 type='text' 

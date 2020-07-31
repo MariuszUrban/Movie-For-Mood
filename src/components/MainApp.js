@@ -1,25 +1,49 @@
-import React from 'react';
-import SearchForm from '../containers/SearchFormCont';
-import {Provider} from 'react-redux';
-import store from '../redux/store'
-import Movies from '../containers/MoviesListCont'
+import React from "react";
+
+import About from '../components/About';
+import Home from '../components/Home'
+import { Provider } from "react-redux";
+import { NavLink as Link, Route, Switch, HashRouter } from "react-router-dom";
+import store from "../redux/store";
+
+import "../sass/utils/style.scss";
+import '../sass/components/_mainApp.scss';
+
+const active = {color:' #083c4d', fontWeight:'bold' }
 
 export default class App extends React.Component {
-
- 
   render() {
     return (
-      <Provider store={store}>
-      <div>
-        <h1>MOVIE BY MOOD </h1>
-        <SearchForm />
-        <Movies />
+      <div className='main'>
+        <Provider store={store}>
+          <HashRouter>
+            <nav className='mainNav'> 
+              <ul className="list">
+                <li>
+                  <Link exact to="/"
+                  activeStyle={active}>
+                    HOME
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/signIn"
+                  activeStyle={active}>
+                  SIGN IN</Link>
+                </li>
+                <li>
+                  <Link to="/about"
+                  activeStyle={active}
+                  >ABOUT</Link>
+                </li>
+              </ul>
+            </nav>
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route path ='/about' component={About} />
+            </Switch>
+          </HashRouter>
+        </Provider>
       </div>
-
-      </Provider>
-      
-    )
+    );
   }
 }
-
-

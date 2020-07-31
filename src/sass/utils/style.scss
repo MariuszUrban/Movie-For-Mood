@@ -1,0 +1,49 @@
+$primaryColor: #ec3116;
+$secondaryColor: #c71c1c;
+$fontColor: #e1ebe3;
+$hoverColor: #083c4d;
+
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,400;0,600;1,200&display=swap");
+
+$mulish: "Mulish",
+sans-serif;
+
+body {
+    padding:0;
+    margin:0;
+    background-color: $secondaryColor;
+    font-family: $mulish;
+    color: $fontColor;
+    
+}
+
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    height: 100vh;
+    width:  100vw;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+// .font-size(@sizeValue) {
+//     @remValue: @sizeValue;
+//     @pxValue: (@sizeValue * 10);
+//     font-size: ~"@{pxValue}px"; 
+//     font-size: ~"@{remValue}rem";
+//   }
+
+@mixin font-size($sizeValue: 1.6) {
+    font-size: ($sizeValue * 10) + px;
+    font-size: $sizeValue + rem;
+}
+
+p {
+    @include font-size(2);
+}
+
