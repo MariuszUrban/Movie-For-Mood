@@ -1,5 +1,11 @@
 @import '../utils/style.scss';
 
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .mainNav{
     width: 100vw;
     padding: 15px;
