@@ -300,8 +300,8 @@ export default class SearchForm extends Component {
             value={this.state.title}
             onChange={this.handleChange}
           ></input>
-          <button type="submit">Search</button>
-          <button type="button" onClick={this.searchRandom}>
+          <button className='btn search' type="submit">Search</button>
+          <button  className='btn search'type="button" onClick={this.searchRandom}>
             Random search
           </button>
         </form>
