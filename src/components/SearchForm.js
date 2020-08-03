@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import '../sass/components/_searchForm.scss'
 export default class SearchForm extends Component {
   constructor(props) {
     super(props);
@@ -292,8 +292,11 @@ export default class SearchForm extends Component {
 
   render() {
     return (
-      <div>
-        <form onSubmit={this.getMovie}>
+      <div className='searchWrapper'>
+        <form 
+        onSubmit={this.getMovie}
+        className='formWrapper'
+        >
           <input
             type="text"
             placeholder="title"

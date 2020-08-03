@@ -1,0 +1,17 @@
+@import '../utils/style.scss';
+
+.homeWrapper {
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.header {
+    font-weight: 600;
+    padding: 20px;
+    margin: 15px;
+    @include font-size(3)
+}

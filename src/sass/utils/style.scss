@@ -14,15 +14,16 @@ body {
     background-color: $secondaryColor;
     font-family: $mulish;
     color: $fontColor;
-    
+    height: 100vh;
+    text-rendering: optimizeLegibility;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
 
 html {
     font-size: 62.5%;
     box-sizing: border-box;
-    height: 100vh;
-    width:  100vw;
 }
 
 *,
@@ -30,13 +31,6 @@ html {
 *:after {
     box-sizing: inherit;
 }
-
-// .font-size(@sizeValue) {
-//     @remValue: @sizeValue;
-//     @pxValue: (@sizeValue * 10);
-//     font-size: ~"@{pxValue}px"; 
-//     font-size: ~"@{remValue}rem";
-//   }
 
 @mixin font-size($sizeValue: 1.6) {
     font-size: ($sizeValue * 10) + px;
@@ -64,7 +58,7 @@ p {
 }
 
 .btn:hover {
-    color: $hoverColor;
+    color: $fontColor;
     background-color:$primaryColor;
     text-decoration: none;
 }

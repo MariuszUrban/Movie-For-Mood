@@ -1,5 +1,5 @@
 @import "react-alice-carousel/lib/scss/alice-carousel.scss";
-
+@import '../utils/style.scss';
 
 .moviesList{
     display: flex;
@@ -9,10 +9,46 @@
 }
 
 .alice-carousel{
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     max-width: 80vw;
+    .alice-carousel__wrapper{
+        width: 80vw;
+        max-height: 25vh;
+    }
 }
 
-.alice-carousel__stage-item{
+
+.moviesCarousel{
     max-width: 250px;
-    
+    max-height: 25vh;
 }
+
+
+.alice-carousel__next-btn{
+    width: 200px;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.25s;
+    cursor: pointer;
+    span{
+        color: $fontColor;
+        @include font-size(1.25);
+    }
+}
+
+.alice-carousel__prev-btn{
+    width: 200px;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.25s;
+    cursor: pointer;
+    span{
+        color: $fontColor;
+        @include font-size(1.25);
+    }
+}
+
