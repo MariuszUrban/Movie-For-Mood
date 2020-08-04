@@ -5,10 +5,20 @@ import '../../sass/components/_home.scss'
 
 
 export default class Home extends Component {
+
+constructor(props) {
+    super(props)
+
+    this.state = {
+         
+    }
+}
+
+
     render() {
         return (
             <div className='homeWrapper'>
-                <SearchForm/>
+                <SearchForm props={this.props}/>
                 <MoviesList />
             </div>
         )
