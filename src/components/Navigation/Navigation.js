@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { NavLink as Link } from "react-router-dom";
+import "../../sass/components/_navigation.scss";
 
 export default class Navigation extends Component {
 

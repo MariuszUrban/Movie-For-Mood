@@ -1,0 +1,30 @@
+.navWrapper{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100vw;
+    height: 7vh;
+}
+
+.hamburgerWrapper {
+    width: 5vw;
+    padding: 15px;
+    position: relative;
+    margin: 5px;
+}
+
+.navHeader{
+    width: 95vw;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.listWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
