@@ -6,18 +6,20 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 20px;
 }
 
 .alice-carousel{
-    height: 40vh;
+    height: 55vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     max-width: 80vw;
+    border: 2px solid;
     .alice-carousel__wrapper{
         width: 80vw;
-        max-height: 25vh;
+        max-height: 45vh;
     }
 }
 
@@ -27,28 +29,14 @@
     max-height: 25vh;
 }
 
-
-.alice-carousel__next-btn{
-    width: 200px;
+.titleCarousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
     text-align: center;
-    text-decoration: none;
-    transition: 0.25s;
-    cursor: pointer;
-    span{
-        color: $fontColor;
-        @include font-size(1.25);
-    }
+    @include font-size(1.7);
 }
 
-.alice-carousel__prev-btn{
-    width: 200px;
-    text-align: center;
-    text-decoration: none;
-    transition: 0.25s;
-    cursor: pointer;
-    span{
-        color: $fontColor;
-        @include font-size(1.25);
-    }
-}
 

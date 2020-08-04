@@ -26,7 +26,7 @@ export const getTitleError = (error) => {
 
 export const fetchData = (title) => (dispatch) => {
     dispatch(getTitle());
-    fetch(`http://www.omdbapi.com/?apikey=a010aa1f&s=${title}&page=1`) // tutaj zmienna odpowiedzialna za tytuł filmu
+    fetch(`http://www.omdbapi.com/?apikey=a010aa1f&s=${title}&page=1`) 
     .then((response) => {
          return response.json()
      })

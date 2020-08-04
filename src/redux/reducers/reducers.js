@@ -1,4 +1,4 @@
-import {GET_TITLE, GET_TITLE_SUCCESS, GET_TITLE_ERROR} from './actions'
+import {GET_TITLE, GET_TITLE_SUCCESS, GET_TITLE_ERROR} from '../actions/actions'
 
 const initialStat = {
     error: '',
