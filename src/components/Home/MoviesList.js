@@ -1,6 +1,6 @@
 import React from "react";
 import AliceCarousel from 'react-alice-carousel';
-import '../sass/components/_moviesList.scss'
+import '../../sass/components/_moviesList.scss'
 
 export default function MoviesList({ loading, moviesArray }) {
   const arr = moviesArray;

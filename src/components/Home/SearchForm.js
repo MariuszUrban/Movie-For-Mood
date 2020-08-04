@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import '../sass/components/_searchForm.scss'
+import '../../sass/components/_searchForm.scss'
 export default class SearchForm extends Component {
   constructor(props) {
     super(props);

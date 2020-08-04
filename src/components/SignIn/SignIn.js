@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import '../sass/components/_signIn.scss'
+import '../../sass/components/_signIn.scss'
 
 
 export default class SignIn extends Component {

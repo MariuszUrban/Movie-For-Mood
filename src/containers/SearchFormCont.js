@@ -1,5 +1,5 @@
 import {connect} from 'react-redux';
-import SearchForm from '../components/SearchForm';
+import SearchForm from '../components/Home/SearchForm';
 import {fetchData} from '../redux/actions';
 
 
