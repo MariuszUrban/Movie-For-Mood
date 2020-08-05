@@ -1,6 +1,6 @@
 import React from "react";
 import SignIn from "./SignIn/SignIn";
-import About from "./About/About.styled";
+import About from "./About/About";
 import Home from "../components/Home/Home";
 import Navigation from '../components/Navigation/Hamburger'
 import { Provider } from "react-redux";
